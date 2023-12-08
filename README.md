@@ -58,7 +58,7 @@ Clone the repository:
 Copy code
 ```bash
 git clone https://github.com/qingchuh/Adtech_Datapipeline.git
-cd MagniteTakeHome
+cd Adtech_Datapipeline
 ```
 
 
