@@ -48,9 +48,10 @@ project-root/
 
 ```
 ## Requirements
-Apache Spark 3.x
-Scala 3.x
-sbt (Scala Build Tool)
+1. Apache Spark 3.x
+2. Scala 3.x
+3. sbt (Scala Build Tool)
+4. java 1.8.0
 
 ### install sbt on mac
 To install SBT (Simple Build Tool) on your Mac using the terminal, you can follow these steps:
