@@ -52,6 +52,27 @@ Apache Spark 3.x
 Scala 3.x
 sbt (Scala Build Tool)
 
+### install sbt on mac
+To install SBT (Simple Build Tool) on your Mac using the terminal, you can follow these steps:
+
+Install Homebrew (if not already installed):
+
+Open your terminal and run the following command to install Homebrew:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+Install SBT:
+
+Once Homebrew is installed, you can use it to install SBT. In your terminal, run the following command:
+
+```bash
+brew install sbt
+```
+Verify Installation:
+```bash
+sbt sbtVersion
+```
 
 ## Instructions for Running the Project
 Clone the repository:
