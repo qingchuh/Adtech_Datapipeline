@@ -81,12 +81,19 @@ sbt clean compile
 ```
 Run the data processing pipeline:
 ```bash
-sbt "runMain datapipeline.scala"
+sbt run
 ```
+
+###Warnings and Errors
+there might be some Warnings and errors on dependencies, please ignore them 
+if you see success and output file is generated
 
 
 ##output 
 output files will be generated in 
+and console will also show first 10 rows on result dataframes
+and total time cost to run the proj like:
+Total time spent: 45.545 seconds
 
 ```plaintext
 project-root/
