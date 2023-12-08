@@ -1,0 +1,72 @@
+{
+  "columns": [
+    {
+      "name": "date",
+      "data_type": "timestamp"
+    },
+    {
+      "name": "site_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "ad_type_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "geo_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "device_category_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "advertiser_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "order_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "line_item_type_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "os_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "integration_type_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "monetization_channel_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "ad_unit_id",
+      "data_type": "integer"
+    },
+    {
+      "name": "total_impressions",
+      "data_type": "integer"
+    },
+    {
+      "name": "total_revenue",
+      "data_type": "double"
+    },
+    {
+      "name": "viewable_impressions",
+      "data_type": "integer"
+    },
+    {
+      "name": "measurable_impressions",
+      "data_type": "integer"
+    },
+    {
+      "name": "revenue_share_percent",
+      "data_type": "integer"
+    }
+  ]
+}
