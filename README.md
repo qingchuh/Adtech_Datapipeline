@@ -84,12 +84,12 @@ Run the data processing pipeline:
 sbt run
 ```
 
-###Warnings and Errors
+### Warnings and Errors
 there might be some Warnings and errors on dependencies, please ignore them 
 if you see success and output file is generated
 
 
-##output 
+## Output 
 output files will be generated in 
 and console will also show first 10 rows on result dataframes
 and total time cost to run the proj like:
