@@ -1,0 +1,37 @@
+# Scala-specific
+target/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac OS
+.DS_Store
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# SBT-specific
+project/target/
+project/project/
+
+# Spark-specific
+*.iml
+*.log
+*.iws
+*.ipr
+.idea/
+.idea_modules/
+
+# Compiled Spark JAR files
+*.jar
+
+# CSV and Parquet data files
+/output/
