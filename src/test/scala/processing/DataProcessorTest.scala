@@ -31,7 +31,7 @@ class DataProcessorTest extends AnyFunSuite with SharedSparkSession {
   // Sample input data
   val dataS = Seq(
     Row("2019-06-30 00:00:00", 351, 10, 187, 2, 84, 3473, 19, 60, 1, 4, 5174, 16, 4.0, 2, 16, 1),
-    Row("2019-06-30 00:00:00", 351, 10, 187, 2, 84, 3473, 19, 58, 1, 4, 5174, 6, 2.0, 0, 6, 1),
+    Row("2019-06-30 00:00:00", 351, 10, 187, 2, 84, 3473, 19, 58, 1, 2, 5174, 6, 2.0, 0, 6, 7),
     Row("2019-06-30 00:00:00", 351, 10, 147, 2, 84, 3473, 19, 60, 1, 4, 5174, 4, 3.0, 0, 4, 1)
   )
 
@@ -88,10 +88,9 @@ class DataProcessorTest extends AnyFunSuite with SharedSparkSession {
 
     // Expected result based on the sample input data
     val expectedData = Seq(
-      (4, 9.0, 44.4),
-      (4, 9.0, 22.2),
-      (4, 9.0, 33.3)
-    ).toDF("monetization_channel_id", "total_revenue_channel", "revenue_share_percent")
+      (4, 2),
+      (2, 7)
+    ).toDF("monetization_channel_id",  "revenue_share_percent")
     resultData.show()
     // Use assert method to check DataFrame equality
     assert(resultData.collect() === expectedData.collect())

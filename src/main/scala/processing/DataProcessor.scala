@@ -23,15 +23,8 @@ class DataProcessor(spark: SparkSession) {
   }
 
   def analyzeRevenueShareByMonetizationChannel(cleanedData: DataFrame): DataFrame = {
-    // Analyzing revenue share across different monetization_channel_ids
-    val windowSpec = Window.partitionBy("monetization_channel_id")
-
-    val result = cleanedData
-      .withColumn("total_revenue_channel", round(sum("total_revenue").over(windowSpec),1))
-      .withColumn("revenue_share_percent", round(col("total_revenue") / col("total_revenue_channel") * 100,1))
-      .select("monetization_channel_id", "total_revenue_channel","revenue_share_percent") // Keep only the desired columns
-
-    // Return the result DataFrame
-    result
+    cleanedData
+      .groupBy("monetization_channel_id")
+      .agg(sum("revenue_share_percent").alias("total_revenue_share_percent"))
   }
 }
