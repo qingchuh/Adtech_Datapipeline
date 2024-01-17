@@ -1,5 +1,6 @@
 # Scala-specific
 target/
+.bsp/
 
 # IntelliJ IDEA
 .idea/
@@ -33,5 +34,3 @@ project/project/
 # Compiled Spark JAR files
 *.jar
 
-# CSV and Parquet data files
-/output/
